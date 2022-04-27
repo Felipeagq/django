@@ -1,4 +1,6 @@
+from django.template import Template,Context
 from django.http import HttpResponse
+import os 
 
 def hello_check(request):
     return HttpResponse("v0.0.0")
@@ -7,3 +9,29 @@ def hello_check(request):
 def nombre(self,nombre):
     texto = f"PROJECT_NAME: {nombre}"
     return HttpResponse(texto)
+
+
+def renderTemplate(self):
+
+    base_path = os.getcwd()
+    template_folder = os.path.join(base_path,"portfolio/templates")
+    print(template_folder)
+
+    # Abrimos el archivo de la plantilla
+    file = open(f"{template_folder}/template1.html".replace("\\","/"))
+
+    # Cargamos plantilla
+    template = Template(file.read())
+
+    # Cerramos el archivo
+    file.close()
+
+    diccionarioContexto = {
+        "nombre":"felipe"
+    }
+
+    contexto = Context(diccionarioContexto)
+
+    plantilla = template.render(contexto)
+
+    return HttpResponse(plantilla)
