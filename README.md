@@ -62,6 +62,7 @@ Para crear Views en Django:
 ### Creación de un modelo.
 - Entramos al archivo ```models.py``` dentro de nuestra aplicación.
 - Creamos nuestros modelos extendiendo la clase ```models``` de ```django.db```.
+- ![](./imagenes/modelos.jpg)
 - Para hacer las migraciones debemos escribir el comando ```python manage.py makemigrations```.
 - Para aplicar las migraciones ```python manage.py migrate```.
 
