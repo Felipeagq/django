@@ -27,7 +27,8 @@ def renderTemplate(self):
     file.close()
 
     diccionarioContexto = {
-        "nombre":"felipe"
+        "nombre":"Projecto Django",
+        "nombres":["Felipe","Camila","Sharon","Diana","Juana"]
     }
 
     contexto = Context(diccionarioContexto)
