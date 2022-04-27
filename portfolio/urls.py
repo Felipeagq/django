@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from portfolio.views import hello_check
+from portfolio.views import hello_check,nombre
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", hello_check)
+
+    path("", hello_check),
+    path("projectname/<nombre>",nombre),
+
 ]
