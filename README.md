@@ -33,7 +33,7 @@ Para crear Views en Django:
 - ![Agregar la vista al archivo de urls](./imagenes/agregar_vista_url.jpg)
 
 ### Vista con parametros Url:
-- dentro del mismo archivo views.py
+- dentro del mismo archivo ```views.py```
 - ![](./imagenes/vista2.jpg)
 - ![](./imagenes/agregar_vista2.jpg)
 
@@ -47,4 +47,4 @@ Para crear Views en Django:
 
 ### Cargador de plantillas.
 - En las vistas, importamos el cargador ```from django.template import loader```
-- En settings.py buscamos la lista de templates y en DIRS[] ponemos la ruta de la carpeta de nuestras plantillas.
+- En ```settings.py``` buscamos la lista de templates y en DIRS[] ponemos la ruta de la carpeta de nuestras plantillas.
