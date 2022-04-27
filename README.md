@@ -52,3 +52,9 @@ Para crear Views en Django:
 - luego renderizamos ```render(contexto)```
 - ![](./imagenes/template_dir.jpg)
 - ![](./imagenes/loader_templatejpg.jpg)
+
+### Creamos una app.
+- A la altura de ```manage.py``` escribimos el comando ```python manage.py startapp [App]```.
+- Luego nos dirigimos a ```settings.py``` en INSTALLED_APPS agregamos nuestra app.
+- ![](./imagenes/app.jpg)
+- ![](./imagenes/app_in_settings.jpg)
