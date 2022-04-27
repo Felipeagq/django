@@ -27,5 +27,5 @@ python manage.py runserver
 Para crear Views en Django:
 - debemos crear un archivo llamado views dentro de nuestro [projecto] y ahí empezar hacer las funciones de las vistas.
 - Agregarlo en el archivo de urls.
-- ![](./imagenes/vista1.jpg)
-- ![](./imagenes/agregar_vista_url.jpg)
+- ![Agregar vista al archivo de views](./imagenes/vista1.jpg)
+- ![Agregar la vista al archivo de urls](./imagenes/agregar_vista_url.jpg)
