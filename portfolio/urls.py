@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from portfolio.views import hello_check,nombre, renderTemplate,loader_template
+from portfolio.views import hello_check,nombre, renderTemplate,loader_template,guardar_curso
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,7 +24,8 @@ urlpatterns = [
     path("", hello_check),
     path("projectname/<nombre>",nombre),
     path("template1",renderTemplate),
-    path("template2",loader_template)
+    path("template2",loader_template),
+    path("curso/<nombre>/<camada>",guardar_curso),
 
 
 ]

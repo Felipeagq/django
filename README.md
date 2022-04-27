@@ -58,3 +58,23 @@ Para crear Views en Django:
 - Luego nos dirigimos a ```settings.py``` en INSTALLED_APPS agregamos nuestra app.
 - ![](./imagenes/app.jpg)
 - ![](./imagenes/app_in_settings.jpg)
+
+### Creación de un modelo.
+- Entramos al archivo ```models.py``` dentro de nuestra aplicación.
+- Creamos nuestros modelos extendiendo la clase ```models``` de ```django.db```.
+- Para hacer las migraciones debemos escribir el comando ```python manage.py makemigrations```.
+- Para aplicar las migraciones ```python manage.py migrate```.
+
+### Agregar información a las BBDD
+#### Shell
+- Se puede ingresar información mediante el shell incorporado en Django.
+- ```python manage.py shell```
+- Importamos los modelos de la app.
+- ```from app.models import [modelo]```
+- lo guardamos en una variable y guardamos los cambios.
+- ```dato = [modelo](key1="value", key2="value2")```
+- ```dato.save()```
+
+#### Función:
+- ![](./imagenes/guardar_en_db_funcion.jpg)
+- ![](./imagenes/registrar_vista_guardado_db_funcion.jpg)

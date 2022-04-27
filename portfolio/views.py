@@ -5,9 +5,11 @@ import os
 def hello_check(request):
     return HttpResponse("v0.0.0")
 
+from app1.models import Curso
 
 def nombre(self,nombre):
     texto = f"PROJECT_NAME: {nombre}"
+
     return HttpResponse(texto)
 
 
@@ -45,7 +47,11 @@ def loader_template(slef):
         "nombre":"Projecto Django2",
         "nombres":["Felipe2","A","B","C","D"]
     }
-
     documento = plantilla.render(diccionarioContexto)
-
     return HttpResponse(documento)
+
+
+def guardar_curso(self,nombre,camada):
+    curso = Curso(nombre=nombre, camada=camada)
+    curso.save()
+    return HttpResponse(curso)
