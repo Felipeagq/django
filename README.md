@@ -47,4 +47,8 @@ Para crear Views en Django:
 
 ### Cargador de plantillas.
 - En las vistas, importamos el cargador ```from django.template import loader```
-- En ```settings.py``` buscamos la lista de templates y en DIRS[] ponemos la ruta de la carpeta de nuestras plantillas.
+- En ```settings.py``` buscamos la lista de templates y en DIRS[ ] ponemos la ruta de la carpeta de nuestras plantillas.
+- volvemos a la vista y llamamos a la plantilla : ```loader.get_template("plantilla")```.
+- luego renderizamos ```render(contexto)```
+- ![](./imagenes/template_dir.jpg)
+- ![](./imagenes/loader_templatejpg.jpg)

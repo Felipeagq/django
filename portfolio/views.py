@@ -1,4 +1,4 @@
-from django.template import Template,Context
+from django.template import Template,Context, loader
 from django.http import HttpResponse
 import os 
 
@@ -36,3 +36,16 @@ def renderTemplate(self):
     plantilla = template.render(contexto)
 
     return HttpResponse(plantilla)
+
+
+def loader_template(slef):
+    plantilla = loader.get_template("template1.html")
+
+    diccionarioContexto = {
+        "nombre":"Projecto Django2",
+        "nombres":["Felipe2","A","B","C","D"]
+    }
+
+    documento = plantilla.render(diccionarioContexto)
+
+    return HttpResponse(documento)
