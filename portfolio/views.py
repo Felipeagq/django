@@ -1,5 +1,6 @@
 from django.template import Template,Context, loader
 from django.http import HttpResponse
+from django.shortcuts import render
 import os 
 
 def hello_check(request):

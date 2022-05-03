@@ -1,8 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 def inicio(request):
-    return HttpResponse("vista de inicio")
+    # return HttpResponse("vista de inicio")
+    return render(request,"app1/inicio.html")
 
 
 def cursos(request):
